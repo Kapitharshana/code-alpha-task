@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGE GALLERY</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="full" id="fullbox"> 
+        <img src="dog.jfif" id="fullimg">
+        <span onclick="closefullimg()">X</span>
+    </div>
+
+    <div class="gallery">
+            <img src="dog.jfif"     onclick="openfullimg(this.src)">
+            <img src="dog2.jfif"    onclick="openfullimg(this.src)">
+            <img src="flower2.jfif" onclick="openfullimg(this.src)">
+            <img src="harry.jfif"   onclick="openfullimg(this.src)">
+            <img src="leaf.jfif"    onclick="openfullimg(this.src)">
+            <img src="owl.jpg"      onclick="openfullimg(this.src)">
+            <img src="tiny.jpg"     onclick="openfullimg(this.src)">
+            <img src="train.jfif"   onclick="openfullimg(this.src)">
+            <img src="flower.jfif"  onclick="openfullimg(this.src)">
+            <img src="flower.jfif"  onclick="openfullimg(this.src)">
+
+    </div>
+
+    <script>
+         var fullbox=document.getElementById("fullbox");
+         var fullimg=document.getElementById("fullimg");
+  
+    function openfullimg(pic){
+        fullbox.style.display="flex";
+        fullimg.src=pic;
+    }
+
+    function closefullimg(){
+        fullbox.style.display="none";
+
+    }
+
+    </script>
+</body>
+</html>
